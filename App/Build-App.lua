@@ -10,14 +10,11 @@ project "App"
    includedirs
    {
       "Source",
-
-	  -- Include Core
-	  "../Core/Source"
    }
 
    links
    {
-      "Core"
+        "jsoncpp"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
